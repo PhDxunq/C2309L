@@ -1,0 +1,18 @@
+li{
+    margin-left: 30px;
+}
+form{
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 30%;
+}
+.text_center{
+    text-align: center;
+}
+input{
+    border-radius: 5px;
+    width: 70%;
+    height: 40px;
+}
