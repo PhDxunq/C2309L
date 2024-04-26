@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.btn-blue{
+    margin-left: 200px;
+    color: blue;
+    text-decoration: underline;
+    border: none;
+    
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.form-group label {
+    width: 150px; 
+    text-align: right; 
+    margin-right: 15px; 
+}
+p{
+    color: red;
+}

@@ -17,7 +17,7 @@
         $password = sha1($_POST["password"]);
         $check_account = "SELECT * FROM abc12users WHERE USERNAME = '$username' AND PASSWORD_HASH ='$password'";
         $result = $conn->query($check_account);
-        if ($result->num_rows == 1) {
+        if ($result->num_rows > 0) {
             $_SESSION["loggedin"] = TRUE;
             echo "Welcome";
             echo '<br><a href="logout.php">Đăng xuất</a>';
@@ -45,6 +45,7 @@
         <label for="password">Password</label>
         <input type="password" name="password" id="password" required><br>
         <input type="checkbox" name="remember_me"><span>Remember me</span> <br>
+        
         <input type="submit" value="Login">
     </form>
 </body>
